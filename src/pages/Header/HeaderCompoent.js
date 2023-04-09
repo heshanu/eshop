@@ -35,7 +35,6 @@ const HeaderCompoent = () => {
                     <span className='nav__itemLineTwo nav__basketCount' >0</span>
                 </div>
                 
-
             </div>
         </div>
     )
