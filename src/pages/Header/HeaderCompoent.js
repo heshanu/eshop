@@ -29,7 +29,7 @@ const HeaderCompoent = () => {
                     <span className='nav__itemLineTwo'>Heshan</span>
                 </div>
 
-                {/*<Link to="/checkout" style={{ textDecoration: "none" }}>
+                { /*<Link to="/checkout" style={{ textDecoration: "none" }}>
                     <div className='nav__item'>
                         <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket' /></span>
                         <span className='nav__itemLineTwo nav__basketCount' >0</span>
