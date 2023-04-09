@@ -5,31 +5,31 @@ import './HeaderCompoent.css'
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
-
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const HeaderCompoent = () => {
     return (
         <div className="header">
-            <div className='header_logo'>
-                <StorefrontIcon className='header_logoImage' fontSize='large' />
-                <h2 className='header_logoText'>eShop</h2>
+            <div className='header__logo'>
+                <StorefrontIcon className='header__logoImage' fontSize='large' />
+                <h2 className='header__logoTitle'>eShop</h2>
             </div>
-            <div className='header_search'>
-                <input type='text' className='header_searchInput' placeholder='Enter value' />
-                <SearchIcon className='header_searchIcon' />
+            <div className='header__search'>
+                <input type='text' className='header__searchInput' placeholder='Enter value' />
+                <SearchIcon className='header__searchIcon' />
             </div>
-            <div className='header_nav'>
+            <div className='header__nav'>
                 <div className='nav_item'>
-                    <span className='nav_itemLineOne'>Hello</span>
-                    <span className='nav_itemLineTwo'>Sign In</span>
+                    <span className='nav__itemLineOne'>Hello</span>
+                    <span className='nav__itemLineTwo'>Sign In</span>
                 </div>
-                <div className='nav_item'>
-                    <span className='nav_itemLineTwo'>Your Shop</span>
-                    <span className='nav_itemLineTwo'></span>
+                <div className='nav__item'>
+                    <span className='nav__itemLineTwo'>Your Shop</span>
+                    <span className='nav__itemLineTwo'>Heshan</span>
                 </div>
-                <div className='nav_item'>
-                    <span className='nav_itemLineTwo'><AddShoppingCartRoundedIcon /></span>
-                    <span className='nav_itemLineTwo'>0</span>
+                <div className='nav__item'>
+                    <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket'/></span>
+                    <span className='nav__itemLineTwo nav__basketCount' >0</span>
                 </div>
             </div>
         </div>
