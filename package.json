@@ -1,7 +1,7 @@
 {
   "name": "eshop",
   "version": "0.1.0",
-  "homepage": "https://heshanu.github.io/eshop.git",
+  "homepage": "https://heshanu.github.io/eshop",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
