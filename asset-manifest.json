@@ -1,15 +1,15 @@
 {
-  "files": {
-    "main.css": "/eshop/static/css/main.693aab78.css",
-    "main.js": "/eshop/static/js/main.5e3fe440.js",
-    "static/js/787.3bed6155.chunk.js": "/eshop/static/js/787.3bed6155.chunk.js",
-    "index.html": "/eshop/index.html",
-    "main.693aab78.css.map": "/eshop/static/css/main.693aab78.css.map",
-    "main.5e3fe440.js.map": "/eshop/static/js/main.5e3fe440.js.map",
-    "787.3bed6155.chunk.js.map": "/eshop/static/js/787.3bed6155.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.693aab78.css",
-    "static/js/main.5e3fe440.js"
-  ]
+  "main.css": "/eshop/static/css/main.7d2f30b6.chunk.css",
+  "main.js": "/eshop/static/js/main.4e0be355.chunk.js",
+  "main.js.map": "/eshop/static/js/main.4e0be355.chunk.js.map",
+  "static/js/1.a3e83d26.chunk.js": "/eshop/static/js/1.a3e83d26.chunk.js",
+  "static/js/1.a3e83d26.chunk.js.map": "/eshop/static/js/1.a3e83d26.chunk.js.map",
+  "static/js/2.50a12a1e.chunk.js": "/eshop/static/js/2.50a12a1e.chunk.js",
+  "static/js/2.50a12a1e.chunk.js.map": "/eshop/static/js/2.50a12a1e.chunk.js.map",
+  "runtime~main.js": "/eshop/static/js/runtime~main.9008777d.js",
+  "runtime~main.js.map": "/eshop/static/js/runtime~main.9008777d.js.map",
+  "static/css/main.7d2f30b6.chunk.css.map": "/eshop/static/css/main.7d2f30b6.chunk.css.map",
+  "index.html": "/eshop/index.html",
+  "precache-manifest.8eb74a72df3c59121ba0d2890633f7e3.js": "/eshop/precache-manifest.8eb74a72df3c59121ba0d2890633f7e3.js",
+  "service-worker.js": "/eshop/service-worker.js"
 }
