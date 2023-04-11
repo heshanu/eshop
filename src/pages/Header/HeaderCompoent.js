@@ -1,8 +1,8 @@
-import React, {  } from 'react';
+import React, { } from 'react';
 import './HeaderCompoent.css'
 
 //importing react router dom link
-import { Link} from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 //material ui icons
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
@@ -30,12 +30,12 @@ const HeaderCompoent = () => {
                     <span className='nav__itemLineTwo'>Heshan</span>
                 </div>
 
-                <Link to="/checkout">
+                <NavLink to={"/checkout"}>
                     <div className='nav__item'>
                         <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket' /></span>
                         <span className='nav__itemLineTwo nav__basketCount' >0</span>
                     </div>
-                </Link>
+                </NavLink>
 
             </div>
         </div>
