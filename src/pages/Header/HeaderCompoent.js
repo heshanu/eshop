@@ -12,10 +12,13 @@ import SearchIcon from '@mui/icons-material/Search';
 const HeaderCompoent = () => {
     return (
         <div className="header">
-            <div className='header__logo'>
-                <StorefrontIcon className='header__logoImage' fontSize='large' />
-                <h2 className='header__logoTitle'>eShop</h2>
-            </div>
+            <Link to={'/'}>
+                <div className='header__logo'>
+                    <StorefrontIcon className='header__logoImage' fontSize='large' />
+                    <h2 className='header__logoTitle'>eShop</h2>
+                </div>
+            </Link>
+
             <div className='header__search'>
                 <input type='text' className='header__searchInput' placeholder='Enter value' />
                 <SearchIcon className='header__searchIcon' />
