@@ -3,9 +3,9 @@ import "./product.css";
 
 //import material ui star icon
 //for filled star
-import StarIcon from '@mui/icons-material/Star';
+//import StarIcon from '@mui/icons-material/Star';
 //for outlined star
-import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
+//import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
 function Product(props) {
     const addToBasketHandler = () => {
         alert("Added to basket")

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {  } from 'react';
 import './HeaderCompoent.css'
+
+//importing react router dom link
+import { Link} from "react-router-dom"
 
 //material ui icons
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
-
-//importing react router dom link
-import { Link } from "react-router-dom"
 
 const HeaderCompoent = () => {
     return (
@@ -30,13 +30,16 @@ const HeaderCompoent = () => {
                     <span className='nav__itemLineTwo'>Heshan</span>
                 </div>
 
-                <div className='nav__item'>
-                    <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket' /></span>
-                    <span className='nav__itemLineTwo nav__basketCount' >0</span>
-                </div>
-                
+                <Link to="/checkout">
+                    <div className='nav__item'>
+                        <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket' /></span>
+                        <span className='nav__itemLineTwo nav__basketCount' >0</span>
+                    </div>
+                </Link>
+
             </div>
         </div>
+
     )
 }
 
