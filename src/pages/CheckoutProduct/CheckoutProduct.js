@@ -18,7 +18,7 @@ const CheckoutProduct = (props) => {
                     {Array(props.rating)
                         .fill()
                         .map((_, i) => (
-                            <p>⭐</p>
+                            <p key={i}>⭐</p>
                         ))}
                 </div>
                 <button>Remove from Basket</button>
