@@ -3,6 +3,10 @@ export const initialState = {
         basket: [],
 }
 
+export const getBasketTotal = (basket) =>{
+    return basket?.reduce((amount, item) => item.price + amount, 0);
+}
+
 //Selector
 export const reducer=(state, action) => {
     switch(action.type){
@@ -14,7 +18,11 @@ export const reducer=(state, action) => {
             }
 
         case 'REMOVE_FROM_BASKET':
-            break;
+            //break;
+            return{
+                ...state,
+
+            }
             //Logic for removing item from basket
             
         default:

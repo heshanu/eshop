@@ -6,6 +6,8 @@ import "./Checkout.css";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import Subtotal from "../Subtotal/Subtotal";
 
+import {ListItemAvatar} from "@material-ui/core"
+
 //import { SportsBasketball } from "@material-ui/icons";
 
 //imp0ort state
@@ -23,7 +25,11 @@ function Checkout() {
                         Your Shopping Basket
                     </h2>
                     {
-                       basket.map() 
+                        basket.map((item) => {
+                            return (
+                                <CheckoutProduct id={item.id} title={item.title} image={item.image} price={item.price} rating={item.rating} />
+                            )
+                        })
                     }
                 </div>
             </div>
