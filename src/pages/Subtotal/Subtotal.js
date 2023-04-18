@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Subtotal.css';
 
 //import useStateValue
-import { useStateValue } from '../../StateProvider';
+import { useStateValue } from '../../state/stateProvider';
 
 //import getBasketTotal 
 import { getBasketTotal } from '../../reducer/reducer';

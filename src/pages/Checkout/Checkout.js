@@ -11,7 +11,7 @@ import {ListItemAvatar} from "@material-ui/core"
 //import { SportsBasketball } from "@material-ui/icons";
 
 //imp0ort state
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../state/stateProvider";
 
 function Checkout() {
     const [{ basket }, dispatch] = useStateValue();

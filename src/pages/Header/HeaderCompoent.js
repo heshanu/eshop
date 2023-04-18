@@ -8,7 +8,7 @@ import { Link, NavLink } from "react-router-dom"
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
-import {useStateValue} from '../../StateProvider';
+import {useStateValue} from '../../state/stateProvider';
 
 const HeaderCompoent = () => {
     const [{basket},dispatch]=useStateValue();
