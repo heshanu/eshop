@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import "./Checkout.css";
 
 //import checkoutproduct
@@ -7,7 +7,12 @@ import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import Subtotal from "../Subtotal/Subtotal";
 
 //import { SportsBasketball } from "@material-ui/icons";
+
+//imp0ort state
+import { useStateValue } from "../../StateProvider";
+
 function Checkout() {
+    const [{ basket }, dispatch] = useStateValue();
 
     return (
         <div className="checkout">
@@ -17,7 +22,9 @@ function Checkout() {
                     <h2 className="checkout__title">
                         Your Shopping Basket
                     </h2>
-                    <CheckoutProduct title={"testing"} image={'https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg'} price={100} rating={10} />
+                    {
+                       basket.map() 
+                    }
                 </div>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React, { useState} from 'react';
 import './HeaderCompoent.css'
 
 //importing react router dom link
@@ -8,8 +8,11 @@ import { Link, NavLink } from "react-router-dom"
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
+import {useStateValue} from '../../StateProvider';
 
 const HeaderCompoent = () => {
+    const [{basket},dispatch]=useStateValue();
+
     return (
         <div className="header">
             <Link to={'/'}>
@@ -36,7 +39,7 @@ const HeaderCompoent = () => {
                 <NavLink to={"/checkout"}>
                     <div className='nav__item'>
                         <span className='nav__itemLineTwo'><AddShoppingCartRoundedIcon className='itemBasket' /></span>
-                        <span className='nav__itemLineTwo nav__basketCount' >0</span>
+                        <span className='nav__itemLineTwo nav__basketCount' >{basket.length}</span>
                     </div>
                 </NavLink>
 

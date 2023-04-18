@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useState} from "react";
 import "./product.css";
+import { useStateValue } from "../../state/stateProvider";
 
 //import material ui star icon
 //for filled star
@@ -7,9 +8,23 @@ import "./product.css";
 //for outlined star
 //import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
 function Product(props) {
+
+    const [state,dispatch] = useStateValue();
+
     const addToBasketHandler = () => {
-        alert("Added to basket")
+        //dispatch the item into the data layer
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: props.id,
+                title: props.title,
+                image: props.image,
+                price: props.price,
+                rating: props.rating,
+            },
+        });
     }
+
     return (
         <div className="product">
             <div className="product__info">
